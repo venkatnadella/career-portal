@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Comment out bootstrap link if not needed -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <script src="assets/javaScripts/profileDataScript.js" defer></script>
+    <script src="assets/javaScripts/script.js" defer></script>
+  </head>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <script src="assets/javaScripts/theme.js"></script>
+
+  <body>
+    <!-- Top navigation for all links -->
+    <ul class="topNav top-mobile">
+      <!-- <li><a class="app-name" href="#">Portfolio</a></li> -->
+      <li class="li-app-name">
+        <span class="app-name">Portfolio</span>
+      </li>
+      <li><a class="mobile-hidden active" href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+
+      <li class="right theme-toggle-flex">
+        <button
+          id="themeToggleBtn"
+          class="theme-toggle-btn"
+          title="Toggle Theme"
+        >
+          🌙
+        </button>
+      </li>
+      <li class="right color-picker-flex">
+        <button
+          id="accentColorBtn"
+          class="accent-color-btn"
+          title="Select Accent Color"
+        >
+          🎨
+        </button>
+      </li>
+      <!--<li class="right download-flex"><button id="downloadResumeBtn" class="download-btn"
+                title="Download Resume">📥</button></li>-->
+      <!-- <li class="mobile-hidden"><a href="./index2.html">HomeV2</a></li> -->
+      <li class="right mobile-hidden"><a href="./contact.html">Contact</a></li>
+      <li class="right mobile-hidden download-flex">
+        <a href="assets/PDFs/Venkata Sai Nadella - Resume.pdf" download
+          >Download Resume 📥</a
+        >
+      </li>
+    </ul>
+
+    <!-- Bottom navigation: only links with .bottom-mobile class are shown on mobile -->
+    <ul class="bottomNav">
+      <li class="bottom-mobile">
+        <a class="active" href="./index.html">Home</a>
+      </li>
+      <li class="bottom-mobile"><a href="./contact.html">Contact</a></li>
+      <li class="bottom-mobile">
+        <a href="assets/PDFs/Venkata Sai Nadella - Resume.pdf" download
+          >Resume 📥</a
+        >
+      </li>
+      <!-- <li class="bottom-mobile"><a class="active" href="./index.html"><span class="nav-icon">🏠</span>Home</a></li>
+        <li class="bottom-mobile"><a href="./about.html"><span class="nav-icon">ℹ️</span>About</a></li>
+        <li class="bottom-mobile"><a href="./contact.html"><span class="nav-icon">📞</span>Contact</a></li> -->
+    </ul>
+    <div id="parentDiv"></div>
+    <footer>
+      <p class="footer-content">
+        &copy; 2025 VENKATA SAI NADELLA. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Accent Color Picker Modal -->
+    <div id="accentColorModal" class="modal">
+      <div class="modal-content">
+        <label for="accentColorPicker" class="modal-section-title"
+          >Select custom accent color</label
+        >
+        <input type="color" id="accentColorPicker" />
+        <p class="modal-section-title">Accent colors</p>
+        <div id="accentColorSwatches">
+          <button
+            class="accent-swatch"
+            style="background: #f25050"
+            title="#F25050"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #ffb900"
+            title="#FFB900"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #ffd400"
+            title="#FFD400"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #92c353"
+            title="#92C353"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #1db954"
+            title="#1DB954"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #00b7c3"
+            title="#00B7C3"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #0099bc"
+            title="#0099BC"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #3a96dd"
+            title="#3A96DD"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #8764b8"
+            title="#8764B8"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #ff8c00"
+            title="#FF8C00"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #e74856"
+            title="#E74856"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #0078d7"
+            title="#0078D7"
+          ></button>
+          <button
+            class="accent-swatch"
+            style="background: #7a7574"
+            title="#7A7574"
+          ></button>
+        </div>
+        <button id="closeAccentModal">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
